@@ -9,6 +9,6 @@ typedef struct distance{
 
 void UserInput(distance *func, int *fcount);
 
-void DistForm(distance p1, distance p2, float *funcAB);
+void length(distance p1, distance p2, float *funcAB);
 
 #endif

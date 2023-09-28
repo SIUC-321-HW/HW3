@@ -21,7 +21,7 @@ Function DistForm or Distance Formuala uses two point1 and point2 structs
 into a single function and does the distance formula on the both points. 
 Then returns funcAB back to main with with a pass by reference.
 */
-void DistForm(distance p1, distance p2, float *funcAB){
+void length(distance p1, distance p2, float *funcAB){
 
     float PQ1 = pow((p2.x - p1.x), 2);
     float PQ2 = pow((p2.y - p1.y), 2);
