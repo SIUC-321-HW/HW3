@@ -1,4 +1,5 @@
 #include "heron.h"
+#include "square.h"
 
 // Assigns value of 0 to any made points structs
 void AssignZero(distance *point_xy){
@@ -44,7 +45,7 @@ Takes in all lengths of AB, AC, BC and inputs them as a, b, c in that order
 Calculates tau and all taus - (each length) then does the Heron calculation
 returns area_func by referance to area_var in main
 */
-void Area(double a, double b, double c, double *area_func){
+void Area(double a, double b, double c, double *area_func, double *my_area_func){
 
     double tau = (a + b + c) / 2;
 
@@ -53,5 +54,6 @@ void Area(double a, double b, double c, double *area_func){
     double tauC = tau - c;
 
     *area_func = sqrt(tau * tauA * tauB * tauC);
+    *my_area_func = mysqrt(tau * tauA * tauB * tauC, 0.1);
 
 }
